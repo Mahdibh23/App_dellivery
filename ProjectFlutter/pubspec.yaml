@@ -1,0 +1,55 @@
+name: shop_app
+description: A new Flutter project.
+
+# Prevent the package from being accidentally published to pub.dev.
+publish_to: "none" 
+
+# Versioning
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cupertino icons for iOS style icons
+  cupertino_icons: ^1.0.2
+
+  # Flutter SVG for using SVG images
+  flutter_svg: ^2.0.9
+
+  # Provider for state management
+  provider: ^6.1.1
+
+  # HTTP package for making HTTP requests
+  http: ^1.2.1
+
+  # Secure storage package for securely storing data
+  flutter_secure_storage: ^9.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lints to encourage good coding practices
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Add assets
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Add custom fonts
+  fonts:
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+        - asset: assets/fonts/muli/Muli-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/muli/Muli-Light.ttf
+          weight: 300
